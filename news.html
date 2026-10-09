@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Join our newsletter to receive the latest updates, web development tips and project inspiration.">
+
+    <title>Newsletter Signup | Aryan's Web Development Track</title>
+
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+    <!-- Main Page -->
+    <main class="page-container">
+
+        <header class="page-header">
+            <a href="#" class="brand" aria-label="Home">
+                <span class="brand-icon">A</span>
+                <span>ARYAN<span class="brand-dot">.</span></span>
+            </a>
+            <span class="header-tag">
+                WEB DEVELOPMENT TRACK
+            </span>
+
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+            <span class="eyebrow">
+                <span class="status-dot"></span>
+                STAY CONNECTED
+            </span>
+            <h1>
+                Good things<br>
+                come to your <span>inbox.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover useful web development tips, creative ideas,
+                coding inspiration and project updates — all in one place.
+            </p>
+            <button class="hero-button" id="openModal" type="button">
+                Join the newsletter
+                <span aria-hidden="true">&rarr;</span>
+            </button>
+            <p class="privacy-note">
+                No spam. Just useful updates.
+            </p>
+
+        </section>
+        <!-- Bottom Information -->
+        <footer class="page-footer">
+            <span>DESIGNED & BUILT WITH HTML, CSS & JAVASCRIPT</span>
+            <span>LEARN. BUILD. CREATE.</span>
+        </footer>
+    </main>
+    <!-- Newsletter Modal -->
+    <div
+        class="modal-overlay"
+        id="modalOverlay"
+        aria-hidden="true"
+        inert
+    >
+        <section
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+            aria-describedby="modalDescription"
+            tabindex="-1"
+        >
+            <!-- Close Button -->
+            <button
+                class="close-btn"
+                id="closeModal"
+                type="button"
+                aria-label="Close newsletter signup"
+            >
+                &times;
+            </button>
+
+            <!-- Left Decorative Panel -->
+            <div class="modal-visual">
+
+                <div class="visual-top">
+                    <span class="visual-logo">A.</span>
+                    <span class="visual-label">THE WEEKLY NOTE</span>
+                </div>
+
+                <div class="illustration" aria-hidden="true">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="floating-card card-one">
+                        <span>&lt;/&gt;</span>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <span>✦</span>
+                    </div>
+
+                    <div class="envelope">
+                        <div class="envelope-paper">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <span class="sparkle sparkle-one">✦</span>
+                    <span class="sparkle sparkle-two">✧</span>
+                </div>
+                <div class="visual-copy">
+                    <span class="visual-kicker">A LITTLE INSPIRATION</span>
+
+                    <h2>
+                        Ideas worth<br>
+                        opening.
+                    </h2>
+                    <p>
+                        Fresh knowledge. Creative thinking.
+                        Better projects.
+                    </p>
+                </div>
+                <div class="visual-footer">
+                    <span>01 — KEEP LEARNING</span>
+                    <span>✳</span>
+                </div>
+            </div>
+
+            <!-- Right Signup Panel -->
+            <div class="modal-content">
+
+                <div class="content-top">
+                    <span class="content-badge">
+                        <span class="status-dot"></span>
+                        NEWSLETTER
+                    </span>
+
+                    <span class="issue-label">YOUR NEXT READ</span>
+                </div>
+
+                <div class="content-main">
+
+                    <div class="mail-symbol" aria-hidden="true">
+                        <span>&#9993;</span>
+                    </div>
+
+                    <h2 id="modalTitle">
+                        Stay in the loop<span>.</span>
+                    </h2>
+
+                    <p
+                        class="modal-description"
+                        id="modalDescription"
+                    >
+                        Get the latest updates, web development
+                        tips and creative inspiration delivered
+                        straight to your inbox.
+                    </p>
+
+                    <form id="newsletterForm">
+
+                        <label for="email">
+                            YOUR EMAIL ADDRESS
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-icon" aria-hidden="true">
+                                &#9993;
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                aria-describedby="message"
+                                required
+                            >
+
+                        </div>
+
+                        <p
+                            class="message"
+                            id="message"
+                            aria-live="polite"
+                        ></p>
+
+                        <button
+                            type="submit"
+                            class="subscribe-btn"
+                        >
+                            <span>Subscribe to newsletter</span>
+                            <span aria-hidden="true">&rarr;</span>
+                        </button>
+
+                    </form>
+
+                    <div class="trust-note">
+                        <span aria-hidden="true">&#10003;</span>
+                        <p>
+                            Your inbox, your choice.
+                            Unsubscribe whenever you want.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="content-footer">
+                    <span>MADE FOR CURIOUS MINDS</span>
+                    <span>ARYAN © 2026</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="news.js"></script>
+</body>
+</html>
